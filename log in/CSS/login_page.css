@@ -24,8 +24,12 @@ body {
 }
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+.imglogo{
+  width: 10%;
+  height: auto;
+  margin-left: 3em;
 }
 .right_top {
   display: flex;
