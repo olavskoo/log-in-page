@@ -1,11 +1,23 @@
-body {
+body, html {
+  /* Inclui que ademas del Body, el HTML tambien adquiera esas propiedades
+  HTML es un tag que esta por fuera del Body, no se recomienda
+  modificarlo o estilizarlo a menos que sea muy necesario, como en las SPA. */
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
   position: relative;
 }
+body{
+  /* El overflow:hidden, indica que no es permitido que los hijos
+  modifiquen el tamaño del padre por innercia, es decir
+  que el padre mantendra siempre las propiedades dadas */
+  overflow:hidden;
+}
 .container {
+  /* Aqui intente  flex:1, que es muy similar a height: 100, y width:100.
+  con flex:1, el display:flex viene incluido. */
+  /* flex:1; */
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -14,26 +26,23 @@ body {
 /* TOP */
 .top {
   display: flex;
-  height: 5%;
+  max-height: 5%;
   background-color: white;
   color: #c17817;
 }
 .left_top {
   display: flex;
-  width: auto;
-}
-.logo {
-  display: flex;
   align-items: center;
+  width: 30%;
 }
 .imglogo{
-  width: 10%;
+  width: 20%;
   height: auto;
   margin-left: 3em;
 }
 .right_top {
   display: flex;
-  flex-grow: 1;
+  width: 70%;
   justify-content: flex-end;
 }
 .lol {
@@ -97,4 +106,8 @@ body {
   justify-content: center;
   background-color: black;
   color: #c17817;
+}
+
+.footer h4{
+  margin:0 !important;
 }
