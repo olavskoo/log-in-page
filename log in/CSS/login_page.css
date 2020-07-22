@@ -133,7 +133,7 @@ body {
 .signin {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  flex-grow: 1;
 }
 .signin-top {
   display: flex;
