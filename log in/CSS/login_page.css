@@ -82,6 +82,7 @@ body {
 }
 .box {
   display: flex;
+  flex-direction: column;
   height: 80%;
   width: 30%;
   background: white;
@@ -90,10 +91,8 @@ body {
   border-image-slice: 1;*/
   /*box-shadow: 0 0 2em 0;*/
 }
-.login {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+.pass{
+  size: 1000px;
 }
 .login-top {
   display: flex;
