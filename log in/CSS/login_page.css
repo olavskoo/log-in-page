@@ -23,8 +23,7 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  font-family: "ZCOOL XiaoWei", serif;
-  font-weight: bold;
+  font-family: 'Play', sans-serif;
   background-color: #363636;
 }
 /* TOP */
@@ -189,6 +188,24 @@ body {
   color: #e2e2e2;
   transition: 0.5s;
 }
+.remember{
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+  width: 70%;
+  font-size: 1.2em;
+}
+#switch{
+  margin-right: 0.5em;
+  height:1.3em;
+}
+.lbl{
+  color: #e2e2e2;
+  transition: 0.5s;
+}
+#switch:checked + .lbl{
+  color: #363636;
+}
 
 /* END INPUT*/
 
@@ -209,12 +226,8 @@ body {
 .fa-sign-in-alt {
   color: #e2e2e2;
 }
-.fa-sign-in-alt:hover {
+.textb input[type="text"]:valid + button{
   color: #363636;
-}
-.line1 {
-  width: 1%;
-  background: linear-gradient(180deg, black, black 20%, white);
 }
 .signin {
   display: flex;
